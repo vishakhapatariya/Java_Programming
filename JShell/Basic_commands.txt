@@ -1,0 +1,9 @@
+To open Jshell write the following command in terminal
+~jshell
+
+Some basic jshell commands are given below:
+>/help intro
+>/help
+>/list -all
+>/list -start
+>/exit
