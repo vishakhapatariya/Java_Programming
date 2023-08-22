@@ -1,0 +1,13 @@
+ ________________________________________________________
+|    Primitive Data Type      |      Wrapper Class       |
+|_____________________________|__________________________|
+|                             |                          |
+|            byte             |           Byte           |
+|            short            |           Short          |
+|            char             |           Char           |
+|            int              |          Integer         |
+|            long             |           Long           |
+|            float            |           Float          |
+|            double           |           Double         |
+|            boolean          |          Boolean         |
+|_____________________________|__________________________|
