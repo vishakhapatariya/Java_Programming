@@ -1,0 +1,15 @@
+Keywords:
+A keyword is any one of a number of reserved words, that have a predefined meaning in the java language.
+--> In java syntax, all code is case-sensitive and this includes keywords.
+    For example, int is not eaqal to Int.
+--> An int (all in lower case) is a keyword in java.
+--> In java, variable have to be initialized before being used.
+
+
+Variables:
+Variables are a way to store information in our computer.
+Example:
+    >int myFirstNumber = 5;
+--> Semicolon in java indicates that the line is completed.
+--> We can see the list of variables that we had created using the following command in jshell,
+    >/var
