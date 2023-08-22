@@ -1,0 +1,7 @@
+Overflow:
+--> If you try and put a value larger than the maximum value into an int, you will create something called an overflow situation.
+
+Underflow:
+--> Similarly, If you try t put a value smaller than the maximum value into an int, you cause an underflow to occure.
+
+--> These situations are also konwn as integer wraparound.
