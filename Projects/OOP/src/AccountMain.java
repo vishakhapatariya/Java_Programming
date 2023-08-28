@@ -23,7 +23,7 @@ public class AccountMain {
         bobsAccount.withdrawFunds(54.45);
 
         Account newAccount = new Account("Vi", "vi@gmail.com", "9876");
-        System.out.println("Account no. : "+ newAccount.getAccountNumber()
-        + "; Name : "+newAccount.getCustomerName());
+        System.out.println("Account no. : " + newAccount.getAccountNumber()
+                + "; Name : " + newAccount.getCustomerName());
     }
 }

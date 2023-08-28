@@ -4,12 +4,13 @@ public class Account {
     private String accountNumber;
     private double balance;
     private String customerName;
-    public Account(){
-        this("56789",2.50,"Default name", "Default address","Default phone");
+
+    public Account() {
+        this("56789", 2.50, "Default name", "Default address", "Default phone");
         System.out.println("Empty constructor called!");
     }
 
-    public Account(String number, double balance, String customerName, String email, String phone){
+    public Account(String number, double balance, String customerName, String email, String phone) {
         System.out.println("Account customer with parameter called");
         this.accountNumber = number;
         this.balance = balance;
@@ -19,7 +20,7 @@ public class Account {
     }
 
     public Account(String customerName, String customerEmail, String phoneNumber) {
-        this("9999",100.55,customerName,customerEmail,phoneNumber);
+        this("9999", 100.55, customerName, customerEmail, phoneNumber);
 //        this.customerName = customerName;
 //        this.customerEmail = customerEmail;
 //        this.phoneNumber = phoneNumber;
