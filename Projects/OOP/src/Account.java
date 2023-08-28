@@ -1,4 +1,4 @@
-// Created deposit and withdraw methods.
+// Created bank deposit and withdraw methods.
 
 public class Account {
     private String accountNumber;
