@@ -4,6 +4,18 @@ public class Account {
     private String accountNumber;
     private double balance;
     private String customerName;
+    public Account(){
+        System.out.println("Empty constructor called!");
+    }
+
+    public Account(String number, double balance, String customerName, String email, String phone){
+        System.out.println("Account customer with parameter called");
+        this.accountNumber = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        customerEmail = email;
+        phoneNumber = phone;
+    }
 
     public String getAccountNumber() {
         return accountNumber;
