@@ -5,7 +5,7 @@ public class TheObjectClass extends Object {
         Students max = new Students("max",21);
         System.out.println(max);
 
-        PrimaryScoolStudent jimmy = new PrimaryScoolStudent("Jimmy",8,"Carol");
+        PrimarySchoolStudent jimmy = new PrimarySchoolStudent("Jimmy",8,"Carol");
         System.out.println(jimmy);
     }
 }
@@ -35,9 +35,9 @@ class Students {
     }
 }
 
-class PrimaryScoolStudent extends Students{
+class PrimarySchoolStudent extends Students{
     private String parentName;
-    PrimaryScoolStudent(String name,int age,String parentName){
+    PrimarySchoolStudent(String name,int age,String parentName){
         super(name,age);
         this.parentName=parentName;
     }
