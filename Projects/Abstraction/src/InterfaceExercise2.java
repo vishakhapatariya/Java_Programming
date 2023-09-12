@@ -9,8 +9,7 @@ interface Tests
         System.out.println("Meth3 of Test");
     }
 }
-
-interface Test2 extends Test
+interface Test2 extends Tests
 {
     void meth4();
 }
