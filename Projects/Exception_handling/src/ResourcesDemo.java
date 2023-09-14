@@ -1,4 +1,4 @@
-// Resources Exercise
+// Try-with-Resources Exercise
 
 import java.io.*;
 import java.util.*;
