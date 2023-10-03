@@ -9,15 +9,18 @@
         *         * * * *
         *          * * * * *  */
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Pattern {
     public static void main(String args[]) {
         int n = 0;
-        Scanner sc = new Scanner(System.in);
         while (n % 2 == 0) {
-            System.out.print("Enter Odd Integer : ");
-            n = sc.nextInt();
+            try {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter Odd Integer : ");
+                n = sc.nextInt();
+            }catch (InputMismatchException e){}
         }
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= n; j++) {
