@@ -1,5 +1,5 @@
 // 1) Perform metrics multiplication using arrays.
-
+package arrays;
 import java.util.Scanner;
 
 public class Arrays1 {
