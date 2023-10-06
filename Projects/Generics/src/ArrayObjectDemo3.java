@@ -1,7 +1,7 @@
 // Bounds on Generics
 // Not declaring type at the time of creation of object
 class MyArray2<T> {
-    T data[];
+    T data[] = (T[]) new Object[10];
     int length = 0;
 
     public void append(T value) {
