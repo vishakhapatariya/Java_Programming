@@ -11,7 +11,7 @@ public class String3 {
         int i=0;
         for (int j = str.length() - 1; j >= 0; j--) {
             res[i] = arr[j];
-            i++;
+            i++;  
         }
 
         System.out.print(res);
