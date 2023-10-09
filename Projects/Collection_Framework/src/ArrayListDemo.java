@@ -3,6 +3,7 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 
 public class ArrayListDemo {
@@ -56,28 +57,24 @@ public class ArrayListDemo {
         System.out.print("\n");
 
 
-//        // method 2
-//        System.out.println("ForEach Iterator");
-//        for (Iterator<Integer> it2 = al1.iterator(); it.hasNext(); ) {
-//            System.out.print(it2.next() + " ");
-//        }
-//        System.out.print("\n");
-//
-//        // List Iterator
-//        System.out.println("List Iterator");
-//        ListIterator<Integer> lit = al1.listIterator();
-//        while (it.hasNext()) {
-//            System.out.println("next : ");
-//            System.out.print(lit.next() + " ");
-//            System.out.println("Previous : ");
-//            System.out.print(lit.previous() + " ");
-//        }
-//        System.out.print("\n");
+        // method 2
+        System.out.println("ForEach Iterator");
+        for (Iterator<Integer> it2 = al1.iterator(); it2.hasNext(); ) {
+            System.out.print(it2.next() + " ");
+        }
+
+        // List Iterator
+        System.out.println("\nList Iterator : ");
+        ListIterator<Integer> lit = al1.listIterator();
+        while (lit.hasNext()) {
+            System.out.print("next : ");
+            System.out.println(lit.next());
+        }
 
 
         // Printing all the elements using forEach loop
         // method 1
-        System.out.println("\nPrinting elements using forEach loop");
+        System.out.println("Printing elements using forEach loop");
         System.out.print("Method 1 : ");
         al1.forEach(n -> System.out.print(n + " "));
 

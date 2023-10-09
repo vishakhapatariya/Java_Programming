@@ -60,32 +60,30 @@ public class LinkedListDemo {
             System.out.print(it.next() + " ");
         }
 
-//        // Printing elements in descending order
-//        System.out.println("\nDescending Iterator");
-//        Iterator<Integer> itd = al1.descendingIterator();
-//        while (it.hasNext()) {
-//            System.out.print(itd.next() + " ");
-//        }
-//
-//        // method 2
-//        System.out.println("\nForEach Iterator");
-//        for (Iterator<Integer> it2 = al1.iterator(); it.hasNext(); ) {
-//            System.out.print(it2.next() + " ");
-//        }
-//
-//        // List Iterator
-//        System.out.println("\nList Iterator");
-//        ListIterator<Integer> lit = al1.listIterator();
-//        while (it.hasNext()) {
-//            System.out.println("next : ");
-//            System.out.print(lit.next() + " ");
-//            System.out.println("Previous : ");
-//            System.out.print(lit.previous() + " ");
-//        }
+        // Printing elements in descending order
+        System.out.print("\nDescending Iterator : ");
+        Iterator<Integer> itd = al1.descendingIterator();
+        while (itd.hasNext()) {
+            System.out.print(itd.next() + " ");
+        }
+
+        // method 2
+        System.out.print("\nForEach Iterator : ");
+        for (Iterator<Integer> it2 = al1.iterator(); it2.hasNext(); ) {
+            System.out.print(it2.next() + " ");
+        }
+
+        // List Iterator
+        System.out.println("\nList Iterator : ");
+        ListIterator<Integer> lit = al1.listIterator();
+        while (lit.hasNext()) {
+            System.out.print("next : ");
+            System.out.println(lit.next());
+        }
 
         // Printing all the elements using forEach loop
         // method 1
-        System.out.print("\nPrinting elements using forEach loop");
+        System.out.print("Printing elements using forEach loop");
         System.out.print("\nMethod 1 : ");
         al1.forEach(n -> System.out.print(n + " "));
 

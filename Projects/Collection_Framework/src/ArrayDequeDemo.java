@@ -1,6 +1,7 @@
 // Array Deque
 
 import java.util.ArrayDeque;
+import java.util.Iterator;
 
 public class ArrayDequeDemo {
     public static void main(String[] args) {
@@ -29,5 +30,20 @@ public class ArrayDequeDemo {
         System.out.println("After Deleting element");
         dq.forEach((x) -> System.out.print(x + " "));
 
+        // Using iterator()
+        System.out.print("\nArrayDeque in order: ");
+        Iterator<Integer> iterate = dq.iterator();
+        while (iterate.hasNext()) {
+            System.out.print(iterate.next());
+            System.out.print(", ");
+        }
+
+        System.out.print("\nArrayDeque in reverse order: ");
+        // Using descendingIterator()
+        Iterator<Integer> desIterate = dq.descendingIterator();
+        while (desIterate.hasNext()) {
+            System.out.print(desIterate.next());
+            System.out.print(", ");
+        }
     }
 }
